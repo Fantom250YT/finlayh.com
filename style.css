@@ -1,0 +1,252 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+.has-fade {
+    visibility: hidden;
+  }
+
+@font-face {
+    font-family: Metropolis-Bold;
+    src: url(fonts/Metropolis-Bold.woff);
+}
+
+@font-face {
+    font-family: caver-pitalsal-regular;
+    src: url(fonts/caver-pitalsal.regular.otf);
+}
+
+@media (max-width: 799px) {
+    .hide-for-mobile {
+        display: none !important;
+    }
+    .btn-blue {
+        display: none !important;
+    }
+}
+
+@media (min-width: 800px) {
+    .hide-for-desktop {
+        display: none !important;
+    }
+    .header__menu {
+        display: none !important;
+    }
+}
+
+@-webkit-keyframes fade-in {
+    from {
+      visibility: hidden;
+      opacity: 0;
+    }
+    1% {
+      visibility: visible;
+      opacity: 0;
+    }
+    to {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-in {
+    from {
+      visibility: hidden;
+      opacity: 0;
+    }
+    1% {
+      visibility: visible;
+      opacity: 0;
+    }
+    to {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  .fade-in {
+    -webkit-animation: fade-in 200ms ease-in-out forwards;
+            animation: fade-in 200ms ease-in-out forwards;
+}
+
+@-webkit-keyframes fade-out {
+    from {
+      visibility: visible;
+      opacity: 1;
+    }
+    99% {
+      visibility: visible;
+      opacity: 0;
+    }
+    to {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fade-out {
+    from {
+      visibility: visible;
+      opacity: 1;
+    }
+    99% {
+      visibility: visible;
+      opacity: 0;
+    }
+    to {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+  .fade-out {
+    -webkit-animation: fade-out 200ms ease-in-out forwards;
+            animation: fade-out 200ms ease-in-out forwards;
+}
+
+.header.open .header__toggle > span:first-child {
+    transform: rotate(45deg);
+}
+.header.open .header__toggle > span:nth-child(2) {
+    opacity: 0;
+}
+.header.open .header__toggle > span:last-child {
+    transform: rotate(-45deg);
+}
+
+.right {
+  user-select: none;
+}
+
+.header__toggle > span {
+    display: block;
+    width: 26px;
+    height: 2px;
+    background-color: #2d314d;
+    transition: all 300ms ease-in-out;
+    transform-origin: 3px 1px;
+}
+
+body.noscroll {
+    overflow: hidden;
+}
+
+.hamburger {
+    padding-right: 20px;
+    padding-top: 25px;
+}
+
+.flex-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.padding-menu {
+  padding-top: 100px;
+  padding-bottom: 100;
+}
+
+.header__toggle > span:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.header__menu {
+    position: absolute;
+    width: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.header__menu a {
+    display: block;
+    padding: 10px;
+    color: #000000;
+    text-align: center;
+}
+
+.navitems {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffc800;
+    padding: 10px;
+};
+
+.navitems > .left {
+
+}
+
+.navitems > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+.navitems > .li {
+}
+
+.navitems a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Metropolis-Bold';
+}
+
+.navitems > .left {
+    padding-left: 40px
+}
+
+.navitems h1 {
+    font-family: "caver-pitalsal-regular";
+    color: #273444;
+}
+
+.btn-blue {
+    display: flex;
+    overflow: hidden;
+
+    margin: 10px;
+    padding: 0px 40px;
+
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 1s;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none !important;
+    text-transform: none;
+
+    border: 0 none;
+    border-radius: 36px;
+
+    font-weight: 500;
+
+    align-items: center;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    background: #416dea;
+}
+
+.btn-blue a {
+    color: white;
+}
+
+.btn-blue:hover {
+    background-color: #004369;
+}
+
+.btn-blue:focus,
+.btn-blue:active {
+    background-color: #004369;
+    transition: none
+}
