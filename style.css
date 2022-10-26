@@ -21,6 +21,11 @@ a, a:visited {
     src: url(fonts/caver-pitalsal.regular.otf);
 }
 
+@font-face {
+  font-family: TangoSans;
+  src: url(fonts/TangoSans.ttf);
+}
+
 @media (max-width: 799px) {
     .hide-for-mobile {
         display: none !important;
@@ -117,10 +122,6 @@ a, a:visited {
     transform: rotate(-45deg);
 }
 
-.right {
-  user-select: none;
-}
-
 .right a {
   display: block;
   text-decoration: none;
@@ -134,16 +135,6 @@ a, a:visited {
     background-color: #2d314d;
     transition: all 300ms ease-in-out;
     transform-origin: 3px 1px;
-}
-
-.header .overlay {
-  opacity: 0;
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-image: linear-gradient(#2d314d, transparent);
 }
 
 body.noscroll {
@@ -188,6 +179,7 @@ body.noscroll {
     justify-content: space-between;
     background-color: #ffc800;
     padding: 10px;
+    border-bottom: solid 5px black;
 };
 
 .navitems > .left {
@@ -202,17 +194,14 @@ body.noscroll {
     display: flex;
 }
 
-.navitems > .li {
-}
-
-.navitems a {
+.navitems > .right a {
     display: block;
     text-decoration: none;
     font-family: 'Metropolis-Bold';
 }
 
 .navitems > .left {
-    padding-left: 40px
+  padding-left: 40px
 }
 
 .navitems h1 {
@@ -261,4 +250,50 @@ body.noscroll {
 .btn-blue:active {
     background-color: #004369;
     transition: none
+}
+
+.hero-background {
+  background: linear-gradient(90deg, #416dea 40%, #0f98ce);
+}
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+  }
+  .hero > .image {
+    padding-left: 200px;
+    
+  }
+  .header__menu {
+    padding-right: 40px;
+  }
+}
+
+.hero h1 {
+  font-family: 'TangoSans';
+  font-size: 50px;
+  color: #ffc800;
+  padding: 0px
+}
+
+.hero p {
+  font-family: 'TangoSans';
+  font-size: 30px;
+  color: black;
+}
+
+.hero > .image {
+  padding-right: 200px;
 }
