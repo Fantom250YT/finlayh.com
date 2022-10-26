@@ -121,6 +121,12 @@ a, a:visited {
   user-select: none;
 }
 
+.right a {
+  display: block;
+  text-decoration: none;
+  font-family: 'Metropolis-Bold';
+}
+
 .header__toggle > span {
     display: block;
     width: 26px;
@@ -128,6 +134,16 @@ a, a:visited {
     background-color: #2d314d;
     transition: all 300ms ease-in-out;
     transform-origin: 3px 1px;
+}
+
+.header .overlay {
+  opacity: 0;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: linear-gradient(#2d314d, transparent);
 }
 
 body.noscroll {
@@ -146,16 +162,12 @@ body.noscroll {
   flex-direction: column;
 }
 
-.padding-menu {
-  padding-top: 100px;
-  padding-bottom: 100;
-}
-
 .header__toggle > span:not(:last-child) {
     margin-bottom: 5px;
 }
 
 .header__menu {
+    list-style-type: none;
     position: absolute;
     width: 55%;
     left: 50%;
