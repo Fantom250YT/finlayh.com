@@ -279,6 +279,9 @@ body.noscroll {
   .header__menu {
     padding-right: 40px;
   }
+  .hero-background {
+    background: linear-gradient(180deg, #416dea 40%, #0f98ce);
+  }
 }
 
 .hero h1 {
