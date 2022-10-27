@@ -273,7 +273,7 @@ body.noscroll {
     padding: 0px;
   }
   .hero > .image {
-    padding-left: 200px;
+    padding-left: 120px;
     
   }
   .header__menu {
@@ -298,5 +298,10 @@ body.noscroll {
 }
 
 .hero > .image {
-  padding-right: 200px;
+  padding-right: 60px;
+}
+
+.hero > .image img {
+  height: auto;
+  max-width: 70%;
 }
