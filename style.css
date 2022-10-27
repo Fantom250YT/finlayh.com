@@ -282,6 +282,9 @@ body.noscroll {
   .hero-background {
     background: linear-gradient(180deg, #416dea 40%, #0f98ce);
   }
+  .hero p {
+    padding-left: 50px;
+  }
 }
 
 .hero h1 {
@@ -297,11 +300,7 @@ body.noscroll {
   color: black;
 }
 
-.hero > .image {
-  padding-right: 60px;
-}
-
 .hero > .image img {
   height: auto;
-  max-width: 70%;
+  max-width: 60%;
 }
